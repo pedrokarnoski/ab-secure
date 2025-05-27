@@ -4,7 +4,13 @@ import React from 'react'
 import type { MessageData } from '@/lib/types'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
-import { CheckCircle2, XCircle, AlertTriangle, ArrowDown } from 'lucide-react'
+import {
+  CheckCircle2,
+  XCircle,
+  AlertTriangle,
+  ArrowDown,
+  MessagesSquare,
+} from 'lucide-react'
 
 interface ProcessVisualizerProps {
   message: MessageData
@@ -26,7 +32,8 @@ export function ProcessVisualizer({
   return (
     <Card className="overflow-hidden">
       <CardHeader className="bg-primary/10">
-        <CardTitle className="text-xl pt-1">
+        <CardTitle className="text-xl pt-1 flex items-center gap-3">
+          <MessagesSquare className="size-5 text-blue-500" />
           Processo de comunicação segura
         </CardTitle>
       </CardHeader>

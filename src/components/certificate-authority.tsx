@@ -38,10 +38,10 @@ export function CertificateAuthority({
 
   return (
     <Card>
-      <CardHeader className="bg-yellow-500/10 pb-2">
-        <CardTitle className="text-lg flex items-center gap-2">
-          <FileCheck className="h-5 w-5 text-yellow-500" />
-          <span>Autoridade Certificadora (AC)</span>
+      <CardHeader className="bg-yellow-500/10">
+        <CardTitle className="text-xl pt-1 flex items-center gap-3">
+          <FileCheck className="size-5 text-yellow-500" />
+          Autoridade Certificadora (AC)
         </CardTitle>
       </CardHeader>
 
