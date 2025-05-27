@@ -1,7 +1,7 @@
 'use client'
 
-import React, { useState } from 'react'
-import { Certificate } from '@/lib/types'
+import React from 'react'
+import type { Certificate } from '@/lib/types'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Badge } from '@/components/ui/badge'
 import {
