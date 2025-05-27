@@ -103,7 +103,7 @@ export class CryptoService {
       combined.set(iv, 0)
       combined.set(new Uint8Array(encryptedData), iv.length)
 
-      return this.arrayBufferToBase64(combined.buffer)
+      return CryptoService.arrayBufferToBase64(combined.buffer)
     } catch (error) {
       console.error('Erro ao criptografar mensagem:', error)
       throw new Error('Falha ao criptografar mensagem')
